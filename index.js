@@ -190,7 +190,7 @@ function moveDodger(e) {
     
     //why don't you use "e.which || e.details"  in if statements below?
     
-    if (e.which || == LEFT_ARROW) {
+    if (e.which == LEFT_ARROW) {
         moveDodgerLeft();
         e.stopPropagation();
         e.preventDefault();
