@@ -88,6 +88,8 @@ function createRock(x) {
               //figure out recursion issue
   
   GAME.appendChild(rock);
+  
+             window.requestAnimationFrame(moveRock)  
 
   
   function moveRock() {
@@ -122,7 +124,7 @@ function createRock(x) {
       rock.remove();
     }
   
-           window.requestAnimationFrame(moveRock)       
+     
                 /**
                  * But if the rock *has* reached the bottom of the GAME,
                  * we should remove the rock from the DOM
