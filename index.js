@@ -216,6 +216,9 @@ function moveDodgerLeft() {
    * (mabye 4 pixels?). Use window.requestAnimationFrame()!
    */
    
+   
+   //see previous labs/lessons for how to move things
+   
   var left = 0;
  
   function step() {
