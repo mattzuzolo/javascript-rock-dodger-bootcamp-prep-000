@@ -78,9 +78,11 @@ function createRock(x) {
             // Hmmm, why would we have used `var` here?
   var top = 0
   
+   rock.style.top = `${top += 2}px`
+  
   function step () {
     
-     rock.style.top = `${top += 2}px`
+    
      
      if (top < 200) {
        window.requestAnimationFrame(step);
