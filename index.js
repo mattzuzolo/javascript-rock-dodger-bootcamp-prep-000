@@ -78,6 +78,17 @@ function createRock(x) {
             // Hmmm, why would we have used `var` here?
   var top = 0
   
+  function step () {
+    
+     
+     
+     if (top < 200) {
+       window.requestAnimationFrame(step);
+     }
+  }
+    window.requestAnimationFrame(step);
+             
+            
               /**
                * Now that we have a rock, we'll need to append
                * it to GAME and move it downwards.
