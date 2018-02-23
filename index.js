@@ -79,7 +79,7 @@ function createRock(x) {
   var top = 0
   
   function step () {
-    
+ /*   
      rock.style.top = `${top += 2}px`
      
      if (top < 200) {
@@ -87,7 +87,7 @@ function createRock(x) {
      }
   }
     window.requestAnimationFrame(step);
-             
+             */
             
               /**
                * Now that we have a rock, we'll need to append
@@ -98,7 +98,8 @@ function createRock(x) {
               
               //figure out recursion issue
   
-  GAME.appendChild(rock);
+ // GAME.appendChild(rock);
+
 
   
   function moveRock() {
