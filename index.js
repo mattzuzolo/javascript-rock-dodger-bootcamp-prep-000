@@ -60,7 +60,7 @@ function checkCollision(rock) {
           else {
 
             //collision doesn't occur — only above statements are true if there's a collision
-            return true;
+            return false;
           }
 
   } //end if top is < 360 if statements
