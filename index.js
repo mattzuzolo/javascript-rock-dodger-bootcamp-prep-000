@@ -89,6 +89,8 @@ function createRock(x) {
   
   GAME.appendChild(rock);
   
+  //step as shown in read.me was unncessary because that's essentially what moveRock(in the default lab) was doing (i.e. top < GAME_HEIGHT)
+  
   //scope issue. Because it was moverock and test wanted it to be called in create rock.
   window.requestAnimationFrame(moveRock)   
 
@@ -98,6 +100,8 @@ function createRock(x) {
                * This function moves the rock. (2 pixels at a time
                * seems like a good pace.)
                */  
+               
+               //this moves the rock
       rock.style.top = `${top += 2}px`          
                 
                 
