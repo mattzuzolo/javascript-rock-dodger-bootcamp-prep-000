@@ -78,6 +78,8 @@ function createRock(x) {
             // Hmmm, why would we have used `var` here?
   var top = 0
   
+  GAME.appendChild(rock);
+  
   function step () {
     
      rock.style.top = `${top += 2}px`
@@ -98,7 +100,7 @@ function createRock(x) {
               
               //figure out recursion issue
   
-  GAME.appendChild(rock);
+  
 
   
   function moveRock() {
