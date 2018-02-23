@@ -75,7 +75,7 @@ function createRock(x) {
   rock.className = 'rock'
   rock.style.left = `${x}px`
 
-  // Hmmm, why would we have used `var` here?
+            // Hmmm, why would we have used `var` here?
   var top = 0
   
   function step () {
@@ -87,66 +87,66 @@ function createRock(x) {
      }
   }
     window.requestAnimationFrame(step);
- 
-
-  /**
-   * Now that we have a rock, we'll need to append
-   * it to GAME and move it downwards.
-   */
-  
-  //append rock to Game here.
-  
-  //figure out recursion issue
+             
+            
+              /**
+               * Now that we have a rock, we'll need to append
+               * it to GAME and move it downwards.
+               */
+              
+              //append rock to Game here.
+              
+              //figure out recursion issue
   
   GAME.appendChild(rock);
 
   
   function moveRock() {
-  /**
-   * This function moves the rock. (2 pixels at a time
-   * seems like a good pace.)
-   */  
-    
-    
-    
-    // implement me!
-    // (use the comments below to guide you!)
-  
+              /**
+               * This function moves the rock. (2 pixels at a time
+               * seems like a good pace.)
+               */  
+                
+                
+                
+                // implement me!
+                // (use the comments below to guide you!)
+              
      
      if (checkCollision(rock)) {
-         /**
-     * If a rock collides with the DODGER,
-     * we should call endGame()
-     */
+                     /**
+                 * If a rock collides with the DODGER,
+                 * we should call endGame()
+                 */
        
        endGame();
      }
 
     if (top < GAME_HEIGHT) {
-    /**
-     * Otherwise, if the rock hasn't reached the bottom of
-     * the GAME, we want to move it again.
-     */
+                /**
+                 * Otherwise, if the rock hasn't reached the bottom of
+                 * the GAME, we want to move it again.
+                 */
       window.requestAnimationFrame(moveRock)
      
     } else {
       rock.remove();
     }
   
-
-    /**
-     * But if the rock *has* reached the bottom of the GAME,
-     * we should remove the rock from the DOM
-     */
-  }
-
-  // We should kick of the animation of the rock around here
-
-  // Add the rock to ROCKS so that we can remove all rocks
-  // when there's a collision
+            
+                /**
+                 * But if the rock *has* reached the bottom of the GAME,
+                 * we should remove the rock from the DOM
+                 */
+              }
+            
+              // We should kick of the animation of the rock around here
+            
+              // Add the rock to ROCKS so that we can remove all rocks
+              // when there's a collision
   ROCKS.push(rock)
 
-  // Finally, return the rock element you've created
+              // Finally, return the rock element you've created
   return rock
 }
 
