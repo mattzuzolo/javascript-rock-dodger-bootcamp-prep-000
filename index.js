@@ -172,10 +172,7 @@ function endGame() {
   //remove all ROCKS from the DOM
   for (let r = 0; r < ROCKS.length; r++) {
     ROCKS[r].remove();
-    
-    
   }
-
   
   //remove the 'moveDodger' event listener
   window.removeEventListener('keydown', moveDodger );
