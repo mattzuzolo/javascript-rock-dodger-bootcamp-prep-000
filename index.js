@@ -119,7 +119,7 @@ function createRock(x) {
                  * we should call endGame()
                  */
        
-       functino endGame();
+       function endGame();
      }
 
     if (top < GAME_HEIGHT) {
