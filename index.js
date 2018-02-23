@@ -81,13 +81,7 @@ function createRock(x) {
   function step () {
     
      
-     
-     if (top < 200) {
-       window.requestAnimationFrame(step);
-     }
-  }
-    window.requestAnimationFrame(step);
-             
+
             
               /**
                * Now that we have a rock, we'll need to append
