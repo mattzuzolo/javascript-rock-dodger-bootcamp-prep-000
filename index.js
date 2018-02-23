@@ -114,6 +114,8 @@ function createRock(x) {
               
      
      if (checkCollision(rock)) {
+       
+         window.requestAnimationFrame(moveRock)
                      /**
                  * If a rock collides with the DODGER,
                  * we should call endGame()
