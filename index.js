@@ -108,7 +108,26 @@ function createRock(x) {
                * seems like a good pace.)
                */  
                 
-                
+          rock.style.top = `${top += 2}px`
+     
+     if (top < 200) {
+       window.requestAnimationFrame(step);
+     }
+  }
+    window.requestAnimationFrame(step);
+             
+            
+              /**
+               * Now that we have a rock, we'll need to append
+               * it to GAME and move it downwards.
+               */
+              
+              //append rock to Game here.
+              
+              //figure out recursion issue
+  
+  GAME.appendChild(rock);
+           
                 
                 // implement me!
                 // (use the comments below to guide you!)
