@@ -89,6 +89,7 @@ function createRock(x) {
   
   GAME.appendChild(rock);
   
+  //scope issue. Because it was moverock and test wanted it to be called in create rock.
   window.requestAnimationFrame(moveRock)   
 
   
@@ -129,6 +130,8 @@ function createRock(x) {
                  * But if the rock *has* reached the bottom of the GAME,
                  * we should remove the rock from the DOM
                  */
+                 
+                 
               }//closes moverock function
             
               // We should kick of the animation of the rock around here
