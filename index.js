@@ -38,13 +38,13 @@ function checkCollision(rock) {
           //const rockRightEdge = positionToInteger(rock.style.right);
           const rockRightEdge = rockLeftEdge + 40;
 
-          if (rockLeftEdge <= dodgerLeftEdge && rockRightEdge >= dodgerRightEdge) {
+          if (rockLeftEdge <= dodgerLeftEdge && rockRightEdge >= dodgerLeftEdge) {
 
             //collsion occurs
             return true;
           }
 
-          else if (rockLeftEdge <= dodgerLeftEdge && rockRightEdge <= dodgerRightEdge) {
+          else if (rockLeftEdge >= dodgerLeftEdge && rockRightEdge <= dodgerRightEdge) {
 
             //collision occurs
             return true;
