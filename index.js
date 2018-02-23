@@ -78,17 +78,6 @@ function createRock(x) {
             // Hmmm, why would we have used `var` here?
   var top = 0
   
-  function step () {
-    
-     rock.style.top = `${top += 2}px`
-     
-     if (top < 200) {
-       window.requestAnimationFrame(step);
-     }
-  }
-    window.requestAnimationFrame(step);
-             
-            
               /**
                * Now that we have a rock, we'll need to append
                * it to GAME and move it downwards.
@@ -106,7 +95,7 @@ function createRock(x) {
                * This function moves the rock. (2 pixels at a time
                * seems like a good pace.)
                */  
-                
+      rock.style.top = `${top += 2}px`          
                 
                 
                 // implement me!
