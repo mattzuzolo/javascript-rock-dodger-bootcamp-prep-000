@@ -165,8 +165,6 @@ function endGame() {
  */
   
   //clear gameInterval
-  
-  
   clearInterval(gameInterval);
   
   //remove all ROCKS from the DOM
